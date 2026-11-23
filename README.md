@@ -106,7 +106,7 @@
 | [dui14/vibe-coding-workflow](https://github.com/dui14/vibe-coding-workflow) | 未标注 | bootstrap 流程形态（仅思路） |
 | [saneroen/vibe-coding-starter-kit](https://github.com/saneroen/vibe-coding-starter-kit) | 未标注 | 接口先行（仅思路） |
 | [Claude Code 文档 · memory](https://code.claude.com/docs/en/memory) | 官方文档（引用结论） | ≤200 行阈值判据 |
-| headroom · caveman · ponytail · cc-thinking-skills · skills · cot-lint | MIT / Apache-2.0 等 | 证明四必填、简化标注天花板、术语表 _Avoid_、吸收关系、白名单 等 |
+| headroom · caveman · ponytail · cc-thinking-skills · skills · cot-lint | MIT / Apache-2.0 等 | 缓存前缀对齐（headroom）、术语表 _Avoid_（skills）、解释长度上限（ponytail）、危险场景不压缩（caveman）、证明四必填、吸收关系、白名单 等 |
 
 > **两个未标注许可证的来源**（dui14、saneroen），破竹**只致谢"思路启发"**，未基于其内容，也**不复制其文本或代码**。
 
@@ -133,6 +133,5 @@
 | `阶段①_构思/` | 构思阶段（定方向、蓝图） |
 | `阶段③_收尾/` | 收尾阶段（合规、许可证、发布、复盘） |
 | `库/` | 跨项目复用资产 |
-| `理念与目标.md` | 理念、目标、设计取舍（给想深入了解的人） |
 
 > `99_版本记录.md` 是开发者的**私有参考**（版本历史 + 决策依据），**不随仓库公开**。

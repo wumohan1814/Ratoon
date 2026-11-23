@@ -106,7 +106,7 @@ Ratoon's mechanisms borrow **ideas and forms** from the projects below (Ratoon's
 | [dui14/vibe-coding-workflow](https://github.com/dui14/vibe-coding-workflow) | Unlicensed | bootstrap flow shape (idea only) |
 | [saneroen/vibe-coding-starter-kit](https://github.com/saneroen/vibe-coding-starter-kit) | Unlicensed | interface-first (idea only) |
 | [Claude Code docs · memory](https://code.claude.com/docs/en/memory) | Official docs (conclusion cited) | ≤200-line threshold rationale |
-| headroom · caveman · ponytail · cc-thinking-skills · skills · cot-lint | MIT / Apache-2.0 etc. | proof-of-behavior four fields, mark-it-when-you-simplify, glossary _Avoid_, absorb-not-add, whitelist, etc. |
+| headroom · caveman · ponytail · cc-thinking-skills · skills · cot-lint | MIT / Apache-2.0 etc. | cache-prefix alignment (headroom), glossary _Avoid_ (skills), explanation-length ceiling (ponytail), no-compression-in-danger (caveman), proof-of-behavior four fields, absorb-not-add, whitelist, etc. |
 
 > **Two unlicensed sources** (dui14, saneroen): Ratoon only credits them for "idea inspiration"; it is **not based on their content**, and **does not copy their text or code**.
 
@@ -133,6 +133,5 @@ You may freely **use, modify, and redistribute**, but you must: ① **give attri
 | `阶段①_构思/` | Ideation phase (direction, blueprint) |
 | `阶段③_收尾/` | Closing phase (compliance, license, publish, retro) |
 | `库/` | Cross-project reusable assets |
-| `理念与目标.md` | Philosophy, goals, design trade-offs (for deeper readers) |
 
 > `99_版本记录.md` is the developer's **private reference** (version history + decision rationale), **not published with the repo**.
