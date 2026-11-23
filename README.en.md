@@ -26,7 +26,7 @@ If you've built personal projects with AI, you've hit these three:
 | Pain | How Ratoon fixes it |
 |---|---|
 | 🧠 **Amnesia** | A new session forgets where things stood → each project keeps **a set of files as durable memory** (`00_根/` + `40_节/`); a new session resumes by reading files, not replaying a conversation |
-| 🔁 **Rework** | Every change replays the whole context and re-does work → **one iteration = one node = one session**, closed when done; **restate + size grading + round-trip budget** catch misunderstanding before work begins |
+| 🔁 **Rework** | Every change replays the whole context and re-does work → **one iteration = one node**, each node lands its own record when done (one session can contain several nodes); **restate + size grading + round-trip budget** catch misunderstanding before work begins |
 | 💸 **Bills** | "Is it done?" is unclear; tokens keep burning → **done = a real artifact is produced** (something the user can see/click/hear), not an agent saying "done" |
 
 Plus a fourth: **cross-project reuse** — something validated in one project carries into the next (`库/`).
@@ -62,7 +62,7 @@ It then: verifies it can read → writes the entry into your project's `AGENTS.m
 - Don't know what to build → "**show me the overview, what's not done**"
 - Too many ideas → "**I have a pile of ideas, take them all**"
 
-**When to close a node**: you don't judge — the agent says "this node passed, suggest closing now", you say "yes". Then it hands you a handoff line; open a new conversation **in the project folder** and say "continue".
+**When to close a node**: you don't judge — the agent says "this node passed, suggest closing now", you say "yes". Then it hands you a handoff line: open a new conversation **in the project folder** and say "continue", or keep going in the same conversation with the next node.
 
 **The one moment you personally approve**: the **blueprint** when starting a project — a plain-language page (including "how this plan is most likely to fail + what to guard against first"). You read it and say "OK" or "not right".
 
@@ -73,7 +73,7 @@ It then: verifies it can read → writes the entry into your project's `AGENTS.m
 - **Facts to the agent, decisions to the user** — anything checkable the agent checks itself; only goals / trade-offs / taste are put to the user.
 - **Single source of truth** — every piece of information has one authoritative place; duplicate records are defects.
 - **Done is evidence, not self-claim** — no real artifact = not done, even if the code is written and tests pass.
-- **One node of bamboo** — one iteration = one node = one session; grow one node and you may stop.
+- **One node of bamboo** — one iteration = one node; grow one node and you may stop (one session can contain several nodes).
 - **The framework must not become a cost itself** — the injected layer stays short and rarely changes; methods come from measurement, prefer deleting mechanisms.
 
 Three phases: **① Ideation (direction, blueprint) → ② Development (node by node) → ③ Closing (compliance, license, publish, retro)**.
@@ -128,7 +128,7 @@ You may freely **use, modify, and redistribute**, but you must: ① **give attri
 | `00_协议.md` | Sole entry: ten iron rules + glossary + reading index + exclusion list |
 | `01-需求链与节.md` | Development phase: one sentence → one node, the full chain |
 | `02-证据与验收.md` | What "done" means, how to prove it, how to roll back |
-| `03-根与模板.md` | Directory structure, templates, scene scripts, Git discipline |
+| `03-根与模板.md` | Directory structure, templates, scene detection, Git discipline |
 | `04-跨项目资产库.md` | Cross-project reuse mechanism |
 | `阶段①_构思/` | Ideation phase (direction, blueprint) |
 | `阶段③_收尾/` | Closing phase (compliance, license, publish, retro) |
